@@ -1,7 +1,9 @@
-var myHeaders = new Headers();
+import fetch from "isomorphic-unfetch";
+
+const myHeaders = new Headers();
 myHeaders.append("hash", "OcJn4jYChW");
 
-var requestOptions: any = {
+const requestOptions: any = {
   method: "GET",
   headers: myHeaders,
   redirect: "follow",
